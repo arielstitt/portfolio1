@@ -1,0 +1,37 @@
+body {
+    position: relative;
+   
+ }
+ .container { 
+ /*   background-color: linen; */
+   height: 100vh;
+   width: 100vw;
+ }
+ .nav-container {
+   height: 10vh;
+   width: 100vw;
+   background-color: #DED6D6;
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);  
+ }
+ .nav-container div{
+   display:flex;
+   justify-content: center;
+   align-items:center;
+ }
+ #home-container {
+   height: 100vh;
+   background: lavender;
+ }
+ #portfolio-container {
+   height: 100vh;
+   background: pink;
+ }
+ #about-container{
+   background: lavender;
+   height: 100vh;
+ }
+ #contact-container{
+   background: pink;
+   height: 100vh;
+ }
