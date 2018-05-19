@@ -31,6 +31,22 @@ body {
    height: 100vh;
    background: pink;
  }
+ .portfolio-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 5%;
+   height: 100%;
+ }
+ .portfolio-item {
+    background-color: blue;
+ }
+ .portfolio-item-1 {
+    grid-row: span 2;
+ }
+ .portfolio-item-4 {
+    grid-column: span 2;
+ }
   /* =================ABOUT================ */
 
  #about-container{
