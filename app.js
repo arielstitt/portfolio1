@@ -1,1 +1,7 @@
-console.log("linked!")
+
+$(document).ready(function(e) {
+    // e.preventDefault();
+    // $('#nav')
+    console.log("linked!")
+
+});

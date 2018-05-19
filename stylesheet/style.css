@@ -2,6 +2,7 @@ body {
     position: relative;
    
  }
+
  .container { 
  /*   background-color: linen; */
    height: 100vh;
@@ -19,18 +20,25 @@ body {
    justify-content: center;
    align-items:center;
  }
+ /* =================HOME================ */
  #home-container {
    height: 100vh;
    background: lavender;
  }
+  /* =================PORTFOLIO================ */
+
  #portfolio-container {
    height: 100vh;
    background: pink;
  }
+  /* =================ABOUT================ */
+
  #about-container{
    background: lavender;
    height: 100vh;
  }
+  /* =================CONTACT================ */
+
  #contact-container{
    background: pink;
    height: 100vh;
