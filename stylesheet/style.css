@@ -53,6 +53,17 @@ body {
    background: lavender;
    height: 100vh;
  }
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    padding: 5%;
+    grid-gap: 10px;
+}
+.about-item {
+    background-color: blue;
+}
+
   /* =================CONTACT================ */
 
  #contact-container{
