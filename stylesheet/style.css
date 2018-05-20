@@ -4,14 +4,14 @@ body {
  }
 
  .container { 
- /*   background-color: linen; */
+   background-color: #A4A9AD;
    height: 100vh;
    width: 100vw;
  }
  .nav-container {
    height: 10vh;
    width: 100vw;
-   background-color: #DED6D6;
+   /* background-color: #DED6D6; */
     display: grid;
    grid-template-columns: repeat(4, 1fr);  
  }
@@ -23,13 +23,14 @@ body {
  /* =================HOME================ */
  #home-container {
    height: 100vh;
-   background: lavender;
+   /* background: lavender; */
  }
   /* =================PORTFOLIO================ */
 
  #portfolio-container {
    height: 100vh;
-   background: pink;
+   /* background: pink; */
+   
  }
  .portfolio-grid-container {
     display: grid;
@@ -39,7 +40,7 @@ body {
    height: 100%;
  }
  .portfolio-item {
-    background-color: blue;
+    background-color:#20A39E;
  }
  .portfolio-item-1 {
     grid-row: span 2;
@@ -47,10 +48,14 @@ body {
  .portfolio-item-4 {
     grid-column: span 2;
  }
+ .project1 {
+   width: 100%;
+   height: 100%;
+ }
   /* =================ABOUT================ */
 
  #about-container{
-   background: lavender;
+   /* background: lavender; */
    height: 100vh;
  }
 .about-grid-container {
@@ -67,7 +72,7 @@ body {
   /* =================CONTACT================ */
 
  #contact-container{
-   background: pink;
+   /* background: pink; */
    height: 100vh;
  }
  .contact-grid-container {
