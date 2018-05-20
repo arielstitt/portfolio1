@@ -70,3 +70,17 @@ body {
    background: pink;
    height: 100vh;
  }
+ .contact-grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   height: 100%;
+   padding: 5%;
+ }
+ .contact-item {
+   background-color: blue;
+ }
+
+ .contact-item-3 {
+   grid-column: span 2;
+ }
