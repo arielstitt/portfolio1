@@ -1,13 +1,14 @@
-body {
-    position: relative;
-   
- }
-
+h1 {
+  color: #23001E;
+}
+h3 {
+  color: #23001E;
+}
  .container { 
-   background-color: #A4A9AD;
    height: 100vh;
    width: 100vw;
  }
+ .grid-container {}
  .nav-container {
    height: 10vh;
    width: 100vw;
@@ -25,6 +26,18 @@ body {
    height: 100vh;
    /* background: lavender; */
  }
+ .home-grid-container {
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   height: 100vh;
+   padding: 5%;
+ }
+ .home-grid-item-1 {
+  background-color:#FFBA49;
+ }
+ .home-grid-item-2 {
+  background-color:#23001E;
+ }
   /* =================PORTFOLIO================ */
 
  #portfolio-container {
@@ -40,13 +53,21 @@ body {
    height: 100%;
  }
  .portfolio-item {
-    background-color:#20A39E;
+    /* background-color:#20A39E; */
  }
  .portfolio-item-1 {
     grid-row: span 2;
+    background-color:#20A39E;
+ }
+ .portfolio-item-2 {
+  background-color:#EF5B5B;
+ }
+ .portfolio-item-3 {
+  background-color:#A4A9AD;
  }
  .portfolio-item-4 {
     grid-column: span 2;
+    background-color:#FFBA49;
  }
  .project1 {
    width: 100%;
@@ -66,9 +87,21 @@ body {
     grid-gap: 10px;
 }
 .about-item {
-    background-color: blue;
+    /* background-color: blue; */
 }
-
+.about-item-1 {
+  background-color: #EF5B5B;
+}
+.about-item-2 {
+  background-image: url("../images/starbucks-lips.png");
+  background-size: cover;
+}
+.about-item-3 {
+  background-color: #FFBA49;
+}
+.about-item-4 {
+  background-color: #20A39E;
+}
   /* =================CONTACT================ */
 
  #contact-container{
@@ -82,10 +115,20 @@ body {
    height: 100%;
    padding: 5%;
  }
- .contact-item {
-   background-color: blue;
- }
-
+.contact-item-1 {
+  background-color: #A4A9AD;
+  background-image: url('../images/GitHub-Mark-64px.png')
+}
+.contact-item-2 {
+  background-color: rgb(4, 120, 176);
+  background-image: url('https://cdn.woorkup.com/wp-content/uploads/2017/03/linkedin-cache.png');
+  background-size: cover;
+}
+.contact-item-3 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/2000px-New_Logo_Gmail.svg.png');
+  background-size: cover;
+  background-color: rgb(213, 73, 66);
+}
  .contact-item-3 {
    grid-column: span 2;
  }
