@@ -1,7 +1,9 @@
+$(() => {
+    console.log("Everything is ready, let's do this");
 
-$(document).ready(function(e) {
-    // e.preventDefault();
-    // $('#nav')
-    console.log("linked!")
-
+    // ===============PORTFOLIO==============
+    $(".portfolio-item").click(function(){
+        $(".portfolio-item").animate({'height': '100vh', 'width': '100vw'});
+    });
+    
 });
