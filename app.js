@@ -24,56 +24,64 @@ $(() => {
     });
 
 
-    
-    const $portfolioItem1 = $('.portfolio-item-1').click(function(){
-        console.log("you clicked a thing")
+
+    const $portfolioItem1 = $('.portfolio-item-1').on("click", function () {
         //hide the other elements 
-        $('.portfolio-item-2, .portfolio-item-3, .portfolio-item-4').hide()
+        $('.portfolio-item-2, .portfolio-item-3, .portfolio-item-4')
+            .animate({width: "toggle",height: "toggle"}, 1000, () => {})
+        //animate the portfolio div
         $('.portfolio-item-1').animate({
             width: "80vw",
             height: '80vh',
-          }, 1000, function() {
-            
-          });
+        }, 1000, function () { });
+        $('.portfolio-item-1').on('click', function () {
+            console.log('something else happened')
+            $('.portfolio-item-2, .portfolio-item-3, .portfolio-item-4')
+                .animate({width: "toggle", height: "toggle"}, 1000, () => {})
+            $('.portfolio-item-1').animate({
+                width: "50vw",
+                height: '60vh',
+            }, 1000, function () { });
+        })
     })
 
-    const $portfolioItem2 = $('.portfolio-item-2').click(function(){
+    const $portfolioItem2 = $('.portfolio-item-2').click(function () {
         console.log("you clicked a thing")
         //hide the other elements 
         $('.portfolio-item-1, .portfolio-item-3, .portfolio-item-4').hide()
         $('.portfolio-item-2').animate({
             width: "80vw",
             height: '80vh',
-            
-          }, 1000, function() {
-            
-          });
+
+        }, 1000, function () { });
+
     })
 
-    const $portfolioItem3 = $('.portfolio-item-3').click(function(){
+    const $portfolioItem3 = $('.portfolio-item-3').click(function () {
         console.log("you clicked a thing")
         //hide the other elements 
         $('.portfolio-item-1, .portfolio-item-2, .portfolio-item-4').hide()
         $('.portfolio-item-3').animate({
             width: "80vw",
             height: '80vh',
-            
-          }, 1000, function() {
-            
-          });
+
+        }, 1000, function () {
+
+        });
+
     })
-    
-    const $portfolioItem4 = $('.portfolio-item-4').click(function(){
+
+    const $portfolioItem4 = $('.portfolio-item-4').click(function () {
         console.log("you clicked a thing")
         //hide the other elements 
         $('.portfolio-item-1, .portfolio-item-2, .portfolio-item-3').hide()
         $('.portfolio-item-4').animate({
             width: "80vw",
             height: '80vh',
-            
-          }, 1000, function() {
-            
-          });
+
+        }, 1000, function () {
+
+        });
     })
 
 });
