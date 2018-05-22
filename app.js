@@ -7,21 +7,41 @@ $(() => {
         if (this.hash !== "") {
             // Prevent default anchor click behavior
             event.preventDefault();
-
             // Store hash
             var hash = this.hash;
-
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
+            // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });
         }  // End if
     });
-
-
+// ======================PORTFOLIO ===============================
+    $('.portfolio-item-1').hover(
+        function(){
+            $(this).addClass('grow')
+            $('.portfolio-item-2, .portfolio-item-3, .portfolio-item-4').addClass('shrink')
+        }
+    )
+    $('.portfolio-item-2').hover(
+        function(){
+            $(this).addClass('grow')
+            $('.portfolio-item-1, .portfolio-item-3, .portfolio-item-4').addClass('shrink')
+        }
+    )
+    $('.portfolio-item-3').hover(
+        function(){
+            $(this).addClass('grow')
+            $('.portfolio-item-1, .portfolio-item-2, .portfolio-item-4').addClass('shrink')
+        }
+    )
+    $('.portfolio-item-4').hover(
+        function(){
+            $(this).addClass('grow')
+            $('.portfolio-item-1, .portfolio-item-2, .portfolio-item-3').addClass('shrink')
+        }
+    )
 });
