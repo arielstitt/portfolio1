@@ -26,23 +26,22 @@ $(() => {
 
 
     const $portfolioItem1 = $('.portfolio-item-1').on("click", function () {
-        //hide the other elements 
+        console.log("first click")
+        // hide the other elements 
         $('.portfolio-item-2, .portfolio-item-3, .portfolio-item-4')
-            .animate({width: "toggle",height: "toggle"}, 1000, () => {})
-        //animate the portfolio div
-        $('.portfolio-item-1').animate({
-            width: "80vw",
-            height: '80vh',
-        }, 1000, function () { });
-        $('.portfolio-item-1').on('click', function () {
-            console.log('something else happened')
-            $('.portfolio-item-2, .portfolio-item-3, .portfolio-item-4')
-                .animate({width: "toggle", height: "toggle"}, 1000, () => {})
-            $('.portfolio-item-1').animate({
-                width: "50vw",
-                height: '60vh',
-            }, 1000, function () { });
-        })
+            .animate({ width: "toggle", height: "toggle" }, 1000, () => { })
+        //animate the portfolio div 
+
+        console.log($(this).hasClass('second-click'))
+        if ($(this).hasClass('second-click')){
+            $(this).removeClass('second-click')
+            console.log('IN HERE')
+        } else {
+            $('.portfolio-item-1').addClass('second-click')
+        }
+        
+        // add class and remove old class
+        
     })
 
     const $portfolioItem2 = $('.portfolio-item-2').click(function () {

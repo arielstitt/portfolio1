@@ -14,7 +14,6 @@ h3 {
  .nav-container {
    height: 10vh;
    width: 100vw;
-   /* background-color: #DED6D6; */
     display: grid;
    grid-template-columns: repeat(4, 1fr);  
  }
@@ -57,27 +56,31 @@ h3 {
  }
 
  .portfolio-item-1 {
+    grid-column: span 1;
     grid-row: span 2;
     background-color:#20A39E;
+    transition: all 1s ease;
  }
  .portfolio-item-2 {
   background-color:#EF5B5B;
-  /* display:none; */
 }
  .portfolio-item-3 {
   background-color:#A4A9AD;
-  /* display: none; */
  }
  .portfolio-item-4 {
     grid-column: span 2;
     background-color:#FFBA49;
-    /* display: none; */
  }
  .project1 {
    width: 100%;
    height: 100%;
  }
+.second-click {
+  width: 80vw;
+  height: 80vh;
+  transition: all 1s ease;
 
+}
 
   /* =================ABOUT================ */
 
