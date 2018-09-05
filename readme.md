@@ -22,4 +22,4 @@ I was able to use grid successfully for the tech that was available at the time.
 
 ## Deployed website
 
-[MOCK PORTFOLIO](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+[MOCK PORTFOLIO](https://vigorous-engelbart-65f96c.netlify.com/)
